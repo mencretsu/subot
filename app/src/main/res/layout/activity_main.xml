@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    android:foregroundTint="#76FF03"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#00E676"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/panelForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:foregroundTint="#00E676"
+            android:orientation="vertical"
+            android:paddingTop="14dp"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/etBotName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:fontFamily="@font/jetbrains_mono"
+                android:hint="@string/nama"
+                android:inputType="text"
+                android:textColor="#00E676"
+                android:textColorHint="#F5F5F5"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                tools:ignore="TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:fontFamily="@font/jetbrains_mono"
+                android:hint="@string/pekerjaan"
+                android:inputType="text"
+                android:textColor="#00E676"
+                android:textColorHint="#F5F5F5"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:fontFamily="@font/jetbrains_mono"
+                android:hint="@string/domisili_kota"
+                android:inputType="text"
+                android:textColor="#00E676"
+                android:textColorHint="#F5F5F5"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                tools:ignore="TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/etHobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:fontFamily="@font/jetbrains_mono"
+                android:hint="@string/hobi"
+                android:inputType="text"
+                android:textColor="#00E676"
+                android:textColorHint="#F5F5F5"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                tools:ignore="TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+            <EditText
+                android:id="@+id/etApiKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:fontFamily="@font/jetbrains_mono"
+                android:hint="@string/api_key"
+                android:textColor="#00E676"
+                android:textColorHint="#F5F5F5"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                tools:ignore="TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jetbrains_mono"
+                android:minHeight="48dp"
+                android:text=" Skip: Cocok, Partner online"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSavePersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#3D5AFE"
+                android:fontFamily="@font/jetbrains_mono"
+                android:text="@string/simpan_profil"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+        <!-- PANEL INFO persona (mulanya GONE) -->
+        <LinearLayout
+            android:id="@+id/panelInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC400"
+            android:foregroundTint="#00E676"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvPersonaInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jetbrains_mono"
+                android:textColor="#DFEBE5"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- tombol start/stop -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:fontFamily="@font/jetbrains_mono"
+            android:text="@string/start_bot"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- status log kecil -->
+
+        <TextView
+            android:id="@+id/tvStatus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jetbrains_mono"
+            android:text="@string/log_ngontol_v10"
+            android:textColor="#00E676"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jetbrains_mono"
+            android:textColor="#00E676"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+</ScrollView>

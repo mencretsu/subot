@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ngontol bot v1</string>
+    <string name="simpan_profil">Simpan Profil</string>
+    <string name="start_bot">Start Bot</string>
+    <string name="domisili_kota">Domisili/kota</string>
+    <string name="api_key">API Key</string>
+    <string name="nama">Nama</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="hobi">Hobi</string>
+    <string name="log_ngontol_v10">== LOG == Ngontol v10 ==</string>
+</resources>

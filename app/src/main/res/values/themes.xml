@@ -1,0 +1,17 @@
+<resources>
+    <style name="Theme.Ngontol" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set default font semua widget -->
+        <item name="android:fontFamily">@font/jetbrains_mono</item>
+        <item name="fontFamily">@font/jetbrains_mono</item>
+
+        <!-- Agar tombol ikut juga -->
+        <item name="android:buttonStyle">@style/Button.Mono</item>
+        <item name="materialButtonStyle">@style/Button.Mono</item>
+    </style>
+
+    <!-- Style turunan khusus tombol -->
+    <style name="Button.Mono" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/jetbrains_mono</item>
+        <item name="fontFamily">@font/jetbrains_mono</item>
+    </style>
+</resources>
